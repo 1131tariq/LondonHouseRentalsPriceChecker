@@ -1,7 +1,7 @@
 import requests
 import json
 
-API = "AIzaSyB1HxFeplrmRTXu19qr4EL934J7Mi6eszw"
+API = "YOUR_API_KEY"
 URL = "https://maps.googleapis.com/maps/api/directions/json"
 Westminister = "University of Westminster - Cavendish Campus, University of Westminster Cavendish Campus, New Cavendish Street, London, UK"
 City = "City, University of London, Northampton Square, London, UK"
