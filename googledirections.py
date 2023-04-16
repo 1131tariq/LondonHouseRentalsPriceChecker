@@ -1,7 +1,7 @@
 import requests
 import json
 
-API = "YOUR_API_KEY"
+API = "YOUR_API_KEY_HERE"
 URL = "https://maps.googleapis.com/maps/api/directions/json"
 Westminister = "University of Westminster - Cavendish Campus, University of Westminster Cavendish Campus, New Cavendish Street, London, UK"
 City = "City, University of London, Northampton Square, London, UK"
@@ -23,7 +23,7 @@ def distance_city(origin):
     except IndexError:
         time_needed = None
         if time_needed is None:
-            transit_time = 1 / 60
+            transit_time = 60 / 60
     else:
         transit_time = int(time_needed) / 60
     finally:
@@ -46,7 +46,7 @@ def distance_wst(origin):
     except IndexError:
         time_needed = None
         if time_needed is None:
-            transit_time = 1 / 60
+            transit_time = 60 / 60
     else:
         transit_time = int(time_needed) / 60
     finally:
